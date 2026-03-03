@@ -4,7 +4,7 @@ import { TaskList } from "./Components/TaskList"
 
 import "./global.css"
 
-import './App.module.css'
+import styles from './App.module.css'
 import { useEffect, useState } from "react";
 
 export type TaskProp = {
@@ -50,7 +50,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className={styles.main}>
         <AddTask
           handleAddTask={handleAddTask}
         />
