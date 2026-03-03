@@ -1,0 +1,45 @@
+.inputAndButton {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.inputAndButton input {
+    font-size: 1.6rem;
+    width: 100%;
+    max-width: 638px;
+    padding: 1.6rem;
+    border: 1px solid var(---gray--700);
+    background: var(---gray--500);
+    border-radius: 8px;
+    color: var(---gray--100);
+}
+
+.inputAndButton input:focus {
+    border: 1px solid var(---purple--300);
+    outline: none;
+}
+
+
+.inputAndButton input::placeholder {
+    color: var(---gray--300);
+}
+
+.inputAndButton button {
+    font: 1.4rem;
+    color: var(---gray--100);
+    background: var(---blue--300);
+    padding: 1.6rem;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: bold;
+}
+
+.inputAndButton button:hover {
+    background: var(---blue--100);
+}
+
+

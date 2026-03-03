@@ -1,0 +1,81 @@
+.taskBox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: var(---gray--500);
+    padding: 1.6rem;
+    gap: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid var(---gray--400);
+}
+
+.taskName {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+}
+
+.notChecked {
+    font-size: 1.4rem;
+    color: var(---gray--100);
+    line-height: 1.4;
+}
+
+.trashIcon {
+    color: var(---gray--300);
+    flex-shrink: 0;
+}
+
+.trashIcon:hover {
+    color: var(---danger);
+}
+
+.checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    border: 1px solid var(---blue--100);
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.checkbox:hover {
+    background-color: var(---gray--400);
+}
+
+.checkbox:checked {
+    background-color: var(---purple--100);
+    border-color: var(---purple--100);
+}
+
+.checkbox:checked::after {
+    height: 16px;
+    width: 16px;
+    content: "✓";
+    background: var(---purple--100);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.taskBox button {
+    background-color: transparent;
+    border: none;
+}
+
+.checked {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: var(---gray--300) !important;
+    text-decoration: line-through;
+}

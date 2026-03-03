@@ -1,0 +1,18 @@
+.headerSection {
+    background: var(---gray--700);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerSection h1 {
+    font-size: 4rem;
+    margin-left: 1.2rem;
+    color: var(---blue--100);
+}
+
+.icon {
+    height: 3rem;
+}
